@@ -14,11 +14,11 @@ function addElementToEndOfArray(array, element) {
   return [...array, element]
 }
 
-function destructivelyAddElementToEndOfArray(){
-  var nextArray = [1]
-  nextArray.push("foo")
-  return nextArray
-}  
+function destructivelyAddElementToEndOfArray(array, element) {
+  array.push(element)
+
+  return array
+}
 
 function accessElementInArray(){
   var myArray=[1,2,3]
